@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+    background: linear-gradient(90deg, #10B981, #3B82F6, #8B5CF6);
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Title Card */
+.nav-title-card {
+    background-color: white;
+    border: 5px solid #adb5bd;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+/* Nav Title Text */
+.nav-title {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Links Container on the Right */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* General Nav Item Style */
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Menu (Hidden by default) */
+.dropdown-menu {
+    display: none; /* Disembunyikan secara default */
+    position: absolute;
+    top: 120%; /* Posisi sedikit di bawah tombol 'Page' */
+    right: 0;
+    background: linear-gradient(180deg, #10B981, #3B82F6, #8B5CF6);
+    border-radius: 20px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* Menampilkan dropdown ketika class 'active' ditambahkan oleh JS */
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* Arrow rotation when active */
+.dropdown.active .dropdown-toggle {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Content Placeholder Styling */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.placeholder {
+    width: 300px;
+    height: 300px;
+    background-color: #d1d5db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f2937;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
